@@ -1,77 +1,406 @@
-@import url('https://fonts.googleapis.com/css2?family=Aubrey&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Roboto";
+    src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Aubrey&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Roboto-thin";
+    src: url("/Fonts/Roboto-Thin.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: "Aubrey";
+    src: url("/Fonts/Aubrey-Regular.ttf");
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    border: 1px solid red;
-} 
-
-:root {
-    font-size: 15px;
-
-    --txt-h: 5rem;
-    --txt-sh: 3rem;
 }
 
-.centered {
+:root {
+    --header-color: #d68189;
+}
+
+/* GLOBAL */
+
+img {
+    width: 100%;
+    border-radius: .7rem;
+}
+
+.flex {
     display: flex;
-    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .justify-center {
     justify-content: center;
 }
 
-/* --------- HEADER ---------- */
-
-nav {
+.justify-between {
     justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.border-green {
+    border: 2px solid green;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.roboto-thin {
+    font-family: 'Roboto-thin', sans-serif;
+}
+
+.small-txt {
+    font-size: 1.2rem;
+}
+
+.mid-txt {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.bit-bold {
+    font-weight: 500;
+}
+
+/* HEADER */
+
+header {
     padding: 0 2rem;
 }
 
-#div-logo img {
-    width: 80%;
+.header-logo img {
+    width: 70%;
 }
 
-#div-link {
-    width: 40%;
-    justify-content: space-between;
+nav {
+    padding: 1rem 0;    
+    gap: 3.5rem;
 }
 
-.nav-link {
-    background-color: pink;
-    justify-content: center;
-    width: 8rem;
-    height: 3rem;
+nav div {
+    padding: 1rem 1.2rem;
+    background-color: var(--header-color);
+    border-radius: 10px;
 }
-
-.nav-link a {
+nav div a {
     color: white;
-    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* MAIN */
+
+section {
+    width: 100%;
+    padding: 0 22%;
+}
+
+.first-container{
+    gap: 3rem;
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.second-sect {
+    margin: 2rem 0 0 0;
+    background-color: #eeebe6;
+}
+
+.container {
+    padding: 4.5rem 0;
+}
+
+.welcome-text {
+    font-family: 'Aubrey', cursive;
     font-size: 1.5rem;
 }
 
-
-/* --------- MAIN--------- */
-
-main {
-    padding: 0 20%;
+.origami-description {
+    text-align: justify;
 }
 
-#second-sect {
-    flex-direction: column;
+.second-container {
+    gap: 1.5rem;
 }
 
-#price-icon {
-    width: 4rem;
-    height: 4rem;
+.featured-texts {
+    gap: 1rem;
+}
+
+.featured-lesson-title {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+}
+
+.featured-lesson-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 450;
+}   
+
+.featured-description {
+    padding: 0 1.5rem;
+}
+
+.featured-origami {
+    gap: 1rem;
+    width: 67%;
+}
+
+.featured-origami-name {
+    font-weight: 800;
+}
+
+.step-list {
+    padding-left: 2rem;
+}
+
+.promo-container {
+    background-color: #c6a39a;
+    color: #fff;
+    height: 25rem;
+    width: 33%;
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.enroll-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.price-icon {
+    height: 6rem;
+    width: 6rem;
+    background-color: #e3cfb4;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.price-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e94f77;
+}
+
+.join-now-btn {
+    background-color: #e94f77;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: .7rem;
+}
+
+section:nth-child(4) {
+    background-color: #eeebe6;
+    padding-bottom: 6rem;
+}
+
+.master-class-intro {
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.master-class-txt {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+}
+
+.grid-parent {
+    width: auto;
+    display: grid;
+    padding: 0;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    height: max-content;
+    width: 100%;
+    gap: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .7rem;
+    justify-content: space-between;
+}
+
+.card-name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card-description {
+    height: 14rem;
+}
+
+.card-skill {
+    width: max-content;
+    padding: .7rem;
+    background-color: #e94f77;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.skill-rating {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.skill-lvl {
+    color: #000;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #c6a39a;
+    color: #fff;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.outro-logo {
+    width: 20%;
+}
+
+.footer-block {
+    gap: 1rem;
+}
+
+.address-txt {
+    text-wrap: wrap;
+    width: 20%;
+    color: #000;
+    font-weight: 55 0;
+}
+
+.designed-by-txt {
+    color: #000;
+    font-weight: 550;
+}
+
+
+/* About Page */
+
+.about-label {
+    padding: 0 2rem;
+    height: 6.5rem;
+    background-color: #cdbab1;
+    background-image: url('../Images/bg_tile.png    ');
+    text-align: left;
+    font-size: 3rem;
+    color: white;
+    margin: 3rem 0;
+}
+
+.origami-intro-txt {
+    gap: 1rem;
+    margin: 3rem 0 0 0;
+}
+
+.origami-intro-txt h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+}
+
+.old-masters {
+    gap: 4rem;
+    margin: 5rem 0;
+}
+
+.old-masters-image {
+    width: 20rem;
+}
+
+.old-masters-image img {
     border-radius: 50%;
 }
+
+.old-masters-name {
+    font-weight: 900;
+    font-size: 1.3rem;
+    margin: .5rem 0;
+}
+
+.new-masters {
+    gap: 4rem;
+    background-color: #eeebe6;
+    padding: 6rem 22%;
+}
+
+.new-masters img {
+    width: 400px;
+}
+
+.new-masters-intro {
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.new-masters-intro h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+}
+
+.new-masters-profile {
+    gap: 4rem;
+}
+
+.grand-master {
+    gap: .5rem;
+}
+
+
+.grand-master img {
+    border-radius: 2rem;
+}
+.new-school-masters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.prof-card {
+    gap: .2rem;
+}
+
+.prof-card img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+
 
 
 

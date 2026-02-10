@@ -7,139 +7,182 @@
     <title>Origami House</title>
 </head>
 <body>
-    <header>
-       <nav class="centered">
-            <div id="div-logo">
-                <img src="/Images/origami_logo.png" alt="origami_logo">
-            </div>
-            <div class="centered" id="div-link">
-                <a href="#" class="nav-link centered">HOME</a>
-                <a href="#" class="nav-link centered">LESSONS</a>
-                <a href="#" class="nav-link centered">ABOUT</a>
-                <a href="#" class="nav-link centered">CONTACTS</a>
-            </div>
-       </nav>
+    <header class="flex justify-between align-center">
+        <div class="header-logo">
+            <img src="/Images/origami_logo.png" alt="origami_logo" class="">
+        </div>
+        <nav class="nav-link flex justify-end align-center">
+            <div class=""><a class="roboto" href="">HOME</a></div>
+            <div class=""><a class="roboto" href="">LESSONS</a></div>
+            <div class=""><a class="roboto" href="./about.html">ABOUT</a></div>
+            <div class=""><a class="roboto" href="">CONTACTS</a></div>
+        </nav>
+       
     </header>
 
-    <main>
-        <section>
-            <h1>Welcome to House of Origami</h1>
-            <p>
-                    Origami comes from the Japanese words ori, meaning "folding", and kami, meaning "paper." It is the art of paper folding, which is often associated with Japanese culture. In modern usage, the word "origami" is used as an inclusive term for all folding practices, regardless of their culture of origin. The goal is to transform a flat, square sheet of paper into a finished sculpture by applying folding and sculpting techniques. Modern origami practitioners generally discourage the use of cuts, glue, or markings on the paper. Origami folders often use the Japanese word kirigami to refer to designs that use cuts.
+    <main class="flex justify-center flex-col align-center">
+        <section class="first-sect">
+            <div class="first-container container flex flex-col align-center justify-center">
+                <div class="welcome-text">
+                    <h1>Welcome to House of Origami</h1>
+                </div>
+                <div class="origami-description roboto small-txt bit-bold">
+                    <p>
+                            Origami comes from the Japanese words ori, meaning "folding", and kami, meaning "paper." It is the art of paper folding, which is often associated with Japanese culture. In modern usage, the word "origami" is used as an inclusive term for all folding practices, regardless of their culture of origin. The goal is to transform a flat, square sheet of paper into a finished sculpture by applying folding and sculpting techniques. Modern origami practitioners generally discourage the use of cuts, glue, or markings on the paper. Origami folders often use the Japanese word kirigami to refer to designs that use cuts.
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-sect">
+            <div class="second-container container flex justify-center align-center flex-col">
+                <div class="featured-texts flex flex-col align-center justify-center">
+                    <div class="featured-lesson-title roboto flex justify-center align-center ">
+                        <span>FEATURED LESSON</span>
+                    </div>
+                     <div class="featured-lesson-text roboto">
+                         <p class="mid-txt roboto-thin">
+                            This wonderful piece is our featured lesson for this month.
+                        </p>
+                    </div>
+                </div>
+                <div class="featured-lesson">
+                    <img src="/Images/featured_lesson.jpg" alt="featured_lesson">
+                </div>
+                <div class="featured-description flex justify-center align-center">
+                    <div class="featured-origami flex flex-col">
+                        <div ><span class="featured-origami-name small-txt roboto">Spear-tailed Dragon</span></div>
+                        <div>
+                            <p class="small-txt roboto bit-bold">This lesson is taught by no other than the head of the Murakami House of Origami. It contains 5 mini videos on how to complete each step of the process. The Murakami House has been using ancient techniques that have been handed down within the family since the Endo period.</p>
+                        </div>
+                        <div>
+                            <span class="small-txt roboto bit-bold">
+                                Lessons:
+                            </span>
+                        </div>
+                        <div class="step-list small-txt roboto bit-bold">
+                            <ol>
+                                <li>Making the head and neck</li>
+                                <li>Forming the body</li>
+                                <li>Making the wings (part 1)</li>
+                                <li>Making the wings (part 2)</li>
+                                <li>Shaping the tail</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <span class="small-txt roboto bit-bold">
+                                This lesson contains bonus links to suppliers for materials used in this tutorial.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="promo-container flex flex-col align-center justify-center">
+                        <div><span class="enroll-text roboto">ENROLL NOW</span></div>
+                        <div><span class="small-txt roboto bit-bold">Get this lesson today for only</span></div>
+                        <div class="price-icon flex align-center justify-center">
+                            <span class="price-text roboto bit-bold"><sup>$</sup>25</span>
+                        </div>
+                        <div>
+                            <span class="small-txt roboto bit-bold">
+                                You will get immediate and lifetime access to all the videos in this lesson.
+                            </span>
+                        </div>
+                        
+                        <div class="join-now-btn roboto flex justify-center align-center">
+                            JOIN NOW
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-sect">
+            <div class="container">
+                <p class="origami-fact-txt roboto small-txt bit-bold">
+                    The small number of basic origami folds can be combined in a variety of ways to make intricate designs. The best known origami model is the Japanese paper crane. In general, these designs begin
+                    with a square sheet of paper whose sides may be of different colors, prints, or patterns. Traditional Japanese origami, which has been practiced since the Edo period (1603–1867), has often been less strict about these conventions, sometimes cutting the paper or using nonsquare shapes to start with. The principles of origami are also used in stents, packaging, and other engineering applications.
                 </p>
-        </section>
-
-        <section class="centered" id="second-sect">
-            <div>
-                <h1>Featured Lesson</h1>
-                 <p>
-                    This wonderful piece is our featured lesson for this month.
-                </p>
-            </div>
-
-            <div id="featured-logo">
-                <img src="/Images/featured_lesson.jpg" alt="featured_lesson">
-            </div>
-
-            <div class="centered" id="featured-description">
-                <div>
-                    <span>Spear-tailed Dragon</span>
-                    <p>This lesson is taught by no other than the head of the Murakami House of Origami. It contains 5 mini videos on how to complete each step of the process. The Murakami House has been using ancient techniques that have been handed down within the family since the Endo period.</p>
-
-                    <span>
-                        Lessons:
-                    </span>
-                    <ol>
-                        <li>1. Making the head and neck</li>
-                        <li>2. Forming the body</li>
-                        <li>3. Making the wings (part 1)</li>
-                        <li>4. Making the wings (part 2)</li>
-                        <li>5. Shaping the tail</li>
-                    </ol>
-                    <span>
-                        This lesson contains bonus links to suppliers for materials used in this tutorial.
-                    </span>
-                </div>
-                <div>
-                    <span>ENROLL NOW</span>
-                    <span>Get this lesson today for only</span>
-                    <div id="price-icon" class="centered justify-center">
-                        <span>$25</span>
-                    </div>
-                    <span>
-                        You will get immediate and lifetime access to all the videos in this lesson.
-                    </span>
-                    <button>
-                        JOIN NOW
-                    </button>
-                </div>
             </div>
         </section>
 
         <section>
-            <p>
-                with a square sheet of paper whose sides may be of different colors, prints, or patterns. Traditional Japanese origami, which has been practiced since the Edo period (1603–1867), has often been less strict about these conventions, sometimes cutting the paper or using nonsquare shapes to start with. The principles of origami are also used in stents, packaging, and other engineering applications.
-            </p>
-        </section>
-
-        <section>
-            <div>
-                <h1>MASTERCLASS LESSONS</h1>
-                <span>Learn only from the masters of origami</span>
+            <div class="master-class-intro flex flex-col container">
+                <div><span class="roboto master-class-txt">MASTERCLASS LESSONS</span></div>
+                <div><span class="roboto-thin mid-txt">Learn only from the masters of origami</span></div>
             </div>
-            <div>
-                <div>
-                    <img src="/Images/lesson01.jpg" alt="">
-                    <span>Wiley Fox</span>
-                    <p>In Japan, foxes symbolize intelligence associated with the Shinto spirit Inari. This particular origami is challenging to make but produces one of the finest examples of the Kitsami Origami style.</p>
-                    <div>
-                        <span>9/10</span>
-                        <span>SKILL LEVEL</span>
+            <div class="grid-parent">
+                <div class="card flex flex-col">
+                    <div><img src="/Images/lesson01.jpg" alt=""></div>
+                    <div  class="card-name" ><span class="roboto">Wiley Fox</span></div>
+                    <div class="card-description flex">
+                        <p class="small-txt roboto bit-bold">In Japan, foxes symbolize intelligence associated with the Shinto spirit Inari. This particular origami is challenging to make but produces one of the finest examples of the Kitsami Origami style.</p>
+                    </div>
+                    <div class="card-skill flex flex-col">
+
+                        <div><span class="skill-rating roboto">9/10</span></div>
+                        <div class="skill-lvl"  ><span class="roboto bit-bold">SKILL LEVEL</span></div>
                     </div>
                 </div>
-                <div>
-                    <img src="/Images/lesson02.jpg" alt="">
-                    <span>Regal Bloodhound</span>
-                    <p> Bloodhounds have been part of humankind, especially in hunting. In this lesson, we will learn to use two monochromatic paper colors to produce a simple but effective Tsumisiru effect.</p>
-                    <div>
-                        <span>5/10</span>
-                        <span>SKILL LEVEL</span>
+
+                <div class="card flex flex-col">
+                    <div><img src="/Images/lesson02.jpg" alt=""></div>
+                    <div  class="card-name" ><span class="roboto">Regal Bloodhound</span></div>
+                    <div class="card-description">
+                        <p class="small-txt roboto bit-bold">Bloodhounds have been part of humankind, especially in hunting. In this lesson, we will learn to use two monochromatic paper colors to produce a simple but effective Tsumisiru effect.</p>
+                    </div>
+                    <div class="card-skill flex flex-col">
+
+                        <div><span class="skill-rating roboto">5/10</span></div>
+                        <div class="skill-lvl"><span class="roboto bit-bold">SKILL LEVEL</span></div>
                     </div>
                 </div>
-                <div>
-                    <img src="/Images/lesson03.jpg" alt="">
-                    <span>Wise Owl</span>
-                    <p> Owls have always been part of lore, and it isn't surprising that we also find them very much in origami. This lesson is famous for combining two different pieces into one without the use of glue or adhesive.</p>
-                    <div>
-                        <span>7/10</span>
-                        <span>SKILL LEVEL</span>
+
+                <div class="card flex flex-col">
+                    <div><img src="/Images/lesson03.jpg" alt=""></div>
+                    <div  class="card-name" ><span class="roboto">Wise Owl</span></div>
+                    <div class="card-description">
+                        <p class="small-txt roboto bit-bold">Owls have always been part of lore, and it isn't surprising that we also find them very much in origami. This lesson is famous for combining two different pieces into one without the use of glue or adhesive.</p>
+                    </div>
+                    <div class="card-skill flex flex-col">
+
+                        <div><span class="skill-rating roboto">7/10</span></div>
+                        <div class="skill-lvl"><span class="roboto bit-bold">SKILL LEVEL</span></div>
                     </div>
                 </div>
-                <div>
-                    <img src="/Images/lesson04.jpg" alt="">
-                    <span>Resting Lion</span>
-                    <p> 
-                        The king of the animal world finds its place among important origami creations. This particular example utilizes curled tips, popularized by the renowned origami artist Shintzu Omahari.
-                    </p>
-                    <div>
-                        <span>8/10</span>
-                        <span>SKILL LEVEL</span>
+
+                <div class="card flex flex-col">
+                    <div><img src="/Images/lesson04.jpg" alt=""></div>
+                    <div  class="card-name" ><span class="roboto">Resting Lion</span></div>
+                    <div class="card-description flex flex-col align-center justify-start">
+                        <p class="small-txt roboto bit-bold">The king of the animal world finds its place among important origami creations. This particular example utilizes curled tips, popularized by the renowned origami artist Shintzu Omahari.</p>
+                    </div>
+                    <div class="card-skill flex flex-col">
+
+                        <div><span class="skill-rating roboto">8/10</span></div>
+                        <div class="skill-lvl"><span class="roboto bit-bold">SKILL LEVEL</span></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <img src="/Images/origami_logo.png" alt="">
-        <p>
-            Copyright © 2026. House of Origami
-            37 Jodoji Ishibashicho, Sakyo
-            Kyoto, 606-8406, Japan
-        </p>
-        <span>
-            Web Design by James Louisse Plete
-        </span>
+    <footer class="flex align-center">
+        <div class="flex align-center footer-block">
+            <div class="outro-logo">
+                <img src="/Images/origami_logo_dark.png" alt="">
+            </div>
+            <div class="address-txt roboto bit-bold" >
+                <p>
+                    Copyright © 2026. House of Origami
+                    37 Jodoji Ishibashicho, Sakyo
+                    Kyoto, 606-8406, Japan
+                </p>
+            </div class="border-green">
+        </div>
+        <div class="designed-by-txt bit-bold roboto">
+            <span>
+                Web Design by James Louisse Plete
+            </span>
+        </div>
     </footer>
 </body>
 </html>

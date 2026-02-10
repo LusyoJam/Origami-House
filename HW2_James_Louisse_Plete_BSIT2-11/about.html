@@ -7,92 +7,119 @@
     <title>About</title>
 </head>
 <body>
-    <header>
-       <nav class="centered">
-            <div id="div-logo">
-                <img src="/Images/origami_logo.png" alt="origami_logo">
-            </div>
-            <div class="centered" id="div-link">
-                <a href="#" class="nav-link centered">HOME</a>
-                <a href="#" class="nav-link centered">LESSONS</a>
-                <a href="#" class="nav-link centered">ABOUT</a>
-                <a href="#" class="nav-link centered">CONTACTS</a>
-            </div>
-       </nav>
+     <header class="flex justify-between align-center">
+        <div class="header-logo">
+            <img src="/Images/origami_logo.png" alt="origami_logo" class="">
+        </div>
+        <nav class="nav-link flex justify-end align-center">
+            <div class=""><a class="roboto" href="./index.html">HOME</a></div>
+            <div class=""><a class="roboto" href="">LESSONS</a></div>
+            <div class=""><a class="roboto" href="./about.html">ABOUT</a></div>
+            <div class=""><a class="roboto" href="">CONTACTS</a></div>
+        </nav>
+       
     </header>
 
     <main>
-       <section>
-        <h1>ABOUT</h1>
+       <section class="about-label roboto flex align-center">
+        <span>ABOUT</span>
        </section>
-       <section>
-            <div>
-                <h1>ORIGAMI MASTERS</h1>
-                <span>The origins of our Origami School</span>
-            </div>
-            <div>
+       <section class="origami-sect flex flex-col">
+            <div class="origami-intro-txt flex flex-col align-center">
                 <div>
-                    <img src="images/master01.jpg" alt="">
-                    <span>Ideoji Murakami</span>
-                    <span>Head Master, 1603</span>
+                    <h1 class="roboto" >ORIGAMI MASTERS</h1>
                 </div>
                 <div>
-                    <img src="/images/master02.jpg" alt="">
-                    <span>Tsumugi Himadatoshi</span>
-                    <span>Head Master. 1627</span>
+                    <span class="roboto-thin mid-txt">The origins of our Origami School</span>
+                </div>
+            </div>
+            <div class="old-masters flex justify-center">
+                <div>
+                    <div class="old-masters-image">
+                        <img src="Images/master01.jpg" alt="">
+                    </div>
+                    <div class="flex justify-center">
+                        <span class="old-masters-name roboto">Ideoji Murakami</span>
+                    </div>
+                    <div class="flex justify-center">
+                        <span class="roboto">Head Master, 1603</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="old-masters-image">
+                        <img src="/Images/master02.jpg" alt="">
+                    </div>
+                    <div class="flex justify-center">
+                        <span class="old-masters-name roboto">Tsumugi Himadatoshi</span>
+                    </div>
+                    <div class="flex justify-center">
+                        <span class="roboto">Head Master. 1627</span>
+                    </div>
                 </div>
             </div>
        </section>
-       <section>
-        <div>
-            <h1>SCHOOOL MASTERS</h1>
-            <span>Learn a skill at a time</span>
-        </div>
-        <div>
-            <div>
-                <img src="/images/headmaster.jpg" alt="">
-                <span>Kanako Ishiwari</span>
-                <span>School Headmaster</span>
-            </div>
-            <div>
+       <section class="new-masters">
+            <div class="new-masters-intro flex flex-col justify-center align-center">
                 <div>
-                    <img src="/images/lessonmaster01.jpg" alt="">
-                    <span>Minato Nakamura</span>
-                    <span>Academic Chancellor</span>
+                    <h1 class="roboto" >SCHOOOL MASTERS</h1>
                 </div>
-
                 <div>
-                    <img src="/images/lessonmaster02.jpg" alt="">
-                    <span>Yuto Watanabe</span>
-                    <span>Beginners Courses</span>
-                </div>
-
-                <div>
-                    <img src="/images/lessonmaster03.jpg" alt="">
-                    <span>Himari Ito</span>
-                    <span>Intermediate Courses</span>
-                </div>
-
-                <div>
-                    <img src="/images/lessonmaster04.jpg" alt="">
-                    <span>Haruto Saito</span>
-                    <span>Advanced Courses</span>
+                    <span class="roboto-thin mid-txt">Learn a skill at a time</span>
                 </div>
             </div>
-        </div>
+            <div class="new-masters-profile flex justify-around align-center">
+                <div class="grand-master flex flex-col align-center">
+                    <div><img src="/Images/headmaster.jpg" alt=""></div>
+                    <div><span class="roboto mid-txt">Kanako Ishiwari</span></div>
+                    <div><span class="roboto"> School Headmaster</span></div>
+                </div>
+                <div class="new-school-masters">
+                    <div class="prof-card flex flex-col align-center">
+                        <div><img src="/Images/lessonmaster01.jpg" alt=""></div>
+                        <div><span class="mid-txt roboto">Minato Nakamura</span></div>
+                        <div><span class="roboto">Academic Chancellor</span></div>
+                    </div>
+
+                    <div class="prof-card flex flex-col align-center">
+                        <div><img src="/Images/lessonmaster02.jpg" alt=""></div>
+                        <div><span class="mid-txt roboto">Yuto Watanabe</span></div>
+                        <div><span class="roboto">Beginners Courses</span></div>
+                    </div>
+
+                    <div class="prof-card flex flex-col align-center">
+                        <div><img src="/Images/lessonmaster03.jpg" alt=""></div>
+                        <div><span class="mid-txt roboto">Himari Ito</span></div>
+                        <div><span class="roboto">Intermediate Courses</span></div>
+                    </div>
+
+                    <div class="prof-card flex flex-col align-center">
+                        <div><img src="/Images/lessonmaster04.jpg" alt=""></div>
+                        <div><span class="mid-txt roboto">Haruto Saito</span></div>
+                        <div><span class="roboto">Advanced Courses</span></div>
+                    </div>
+                </div>
+            </div>
        </section>
     </main>
 
-    <footer>
-        <img src="/Images/origami_logo.png" alt="">
-        <p>
-            Copyright © 2026. House of Origami
-            37 Jodoji Ishibashicho, Sakyo
-            Kyoto, 606-8406, Japan
-        </p>
-        <span>
-            Web Design by James Louisse Plete
-        </span>
+    <footer class="flex align-center">
+        <div class="flex align-center footer-block">
+            <div class="outro-logo">
+                <img src="/Images/origami_logo_dark.png" alt="">
+            </div>
+            <div class="address-txt roboto bit-bold" >
+                <p>
+                    Copyright © 2026. House of Origami
+                    37 Jodoji Ishibashicho, Sakyo
+                    Kyoto, 606-8406, Japan
+                </p>
+            </div class="border-green">
+        </div>
+        <div class="designed-by-txt bit-bold roboto">
+            <span>
+                Web Design by James Louisse Plete
+            </span>
+        </div>
     </footer>
 </body>
 </html>
